@@ -1,0 +1,57 @@
+<div class="top-image">
+  <h1>pagetrn</h1>
+</div>
+
+<div class="showContainer">
+
+  <img src="<%= book.cover %>" height="300px" />
+
+  <div class="showContent">
+
+      <h2><%= book.title %></h2>
+      <br>
+
+      <p>
+        <%= book.text %>
+      </p>
+
+      <br>
+
+      <span>A review by <%= book.reviewer %>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+      <div class="reviewText">
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </div>
+
+    <center>
+
+    <form method="PUT" action="/reviews/<%= book.id %>/edit">
+    <input type="hidden" name="_method" value="UPDATE">
+
+    <button>UPDATE</button>
+    </form>
+
+    <form method="POST" action="/reviews/<%= book.id %>">
+    <input type="hidden" name="_method" value="delete">
+
+    <button>DELETE</button>
+    </form>
+
+    </center>
+
+  </form>
+
+  </div>
+
+</div>

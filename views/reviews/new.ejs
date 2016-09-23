@@ -1,0 +1,48 @@
+<div class="top-image">Submit a Review</div>
+
+<center>
+  <div class="formContainer">
+
+    <div class="newForm">
+
+      <form action="/reviews" method="POST" id="newFormForm">
+
+        <div class="form-group">
+          <label for="review_title">Title</label>
+          <input type="text" name="review[title]" placeholder="What book are you reviewing?" class="form-control" id="review_title">
+        </div>
+
+        <div class="form-group">
+          <label for="review_author">Author</label>
+          <input type="text" name="review[author]" placeholder="Author" class="form-control" id="review_author">
+        </div>
+
+        <div class="form-group">
+          <label for="review_cover">Cover</label>
+          <input type="text" name="review[cover]" placeholder="Enter an url for the book cover" class="form-control" id="review_cover">
+        </div>
+
+        <div class="form-group">
+          <label for="review_text">Review</label>
+          <textarea type="text" name="review[text]" placeholder="Enter your review here." class="form-control" id="review_text">
+        </textarea>
+
+        <div class="form-group">
+          <label for="review_reviewer">Your Name</label>
+          <input type="text" name="review[reviewer]" placeholder="What name would you like your review posted under?" class="form-control" id="review_reviewer">
+        </div>
+
+
+        <div class="form-group">
+          <input type="submit" value='Save Review' class="btn btn-default">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</center>
+
+<div class="clearfix"></div>

@@ -1,0 +1,76 @@
+<div class="supporting">
+
+  <div class="top-image">  
+    <h1>pagetrn</h1>
+  </div>
+
+      <div class="container">
+        <div class="col">
+          <h2>Read</h2>
+          <p>PAGETRN's book database is full of reviews of titles by readers like yourself. Your next read is just a click away.</p>
+        </div>
+
+        <div class="col">
+          <h2>Find</h2>
+          <p>Using our intelligent book-sorting algorithm, PAGETRN seeks out your next perfect read so you don't have to. Whether you want something similar to your last book or if you fancy something completely different, leave it to PAGETRN to keep you reading.</p>
+        </div>
+
+         <div class="col">
+          <h2>Connect</h2>
+          <p>PAGETRN connects you with people who love the books you do.</p>
+        </div>
+
+      <div class="clearfix"></div>
+
+        <br><br>
+
+      </div>
+
+      <div class="reviewsBox">
+        <h2>Reviews</h2>
+      </div>
+
+      <div class="container">
+
+      <ul id="reviews">
+
+        <% reviews.forEach(function(review){ %>
+
+          <div class="reviewRow">
+
+            <a href="/reviews/<%= review.id %>">
+              <img src="<%= review.cover %>" height="150px" />
+              <%= review.title %> // <%= review.author %>
+            </a>
+            <br>
+            <%= review.text %>
+
+            <br><br>
+
+            by <%= review.reviewer %>
+
+          </div>
+
+        <% }); %>
+
+        <div class="clearfix"></div>
+
+
+        <br><br>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        <br><br>
+
+        <div id="newReview">
+          <a href="/reviews/new">Add Your Review</a>
+        </div>
+
+      </div>
+
+  </div>
